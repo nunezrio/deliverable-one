@@ -1,0 +1,140 @@
+body {
+  background: #F0ECEE;
+  font-family: Fira Sans, sans-serif;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Typography */
+
+h1 {
+  font-weight: 400;
+  font-size: 1.825rem;
+  margin: 0;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 2.5rem;
+  line-height: 3.75rem;
+  margin: 0;
+}
+
+.accent-color {
+  color: #FF4850;
+}
+
+.subtitle {
+  color: #88898B;
+  font-weight: 400;
+  font-size: 1.1rem;
+  line-height: 1.1rem;
+  padding-bottom: 0.5em;
+}
+
+/* Layout */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 0 auto;
+  padding: 1em;
+  padding-bottom: 3em;
+
+}
+
+.main-title {
+  max-width: 92%;
+}
+
+.nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 1em 0 0 0;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #88898B;
+  font-weight: 400;
+  font-size: 1.5rem;
+  padding: .20em 0;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: #FF4850;
+}
+
+.cta-link {
+  text-decoration: none;
+  color: #88898B;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+.btn {
+  margin: 0;
+  padding: 10px;
+  border-radius: 15px;
+  color: #ffffff;
+  background: #FF4850;
+  align-content: center;
+  display: block;
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.btn:hover,
+.btn:focus {
+  background: #CCCCCC;
+  color: #ffffff;
+}
+
+/* Desktop Design */
+
+@media (min-width: 768px) {
+  body {
+  background-image: url('./../images/bulldog.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  padding: 2em .2em;
+  }
+
+  .nav-container {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 11.5em;
+    align-items: baseline;
+  }
+
+  .navigation {
+    flex-direction: row;
+  }
+
+  .nav-list {
+    display: flex;
+    margin: 0;
+    align-items: baseline;
+  }
+
+  .nav-list-item {
+    margin-left: 1em;
+  }
+
+  #main-title {
+    max-width: 40%;
+  }
+
+  .subtitle {
+    font-size: 1.6rem;
+    line-height: 2rem;
+    max-width: 52%;
+  }
+
+  .find-out-how {
+    max-width: 22%;
+  }
+}
